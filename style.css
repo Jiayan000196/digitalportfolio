@@ -1,0 +1,312 @@
+/* Body */
+body {
+    background-color: black;
+    color: white;
+    font-family: Clash Display Variable;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button, .resume-btn {
+    border-radius: 5px;
+    color: #78A17C;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;  /* Combine common padding */
+    background-color: #000;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: white;
+    color: black;
+}
+
+.resume-btn {
+    border: 1px solid white;
+    padding: 8px 16px;
+    color: #78A17C;
+}
+
+/* Main Content */
+main {
+    padding-top: 120px;
+    width: 100%;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.intro {
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 400px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    object-position: center 10%;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    font-weight: 100;
+    display: block;
+    white-space: normal;
+}
+
+.highlight {
+    color: #78A17C;
+    font-size: 2rem;
+    font-weight: 580;
+    white-space: nowrap;
+    display: inline;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.homefooter-right a {
+    color: #78A17C;
+}
+
+
+/*work*/
+.section {
+    padding: 60px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.section h3 {
+    text-align: left;            
+    width: 100%;     
+    padding-top: 50px;   
+    font-family: Clash Display Variable;
+    color:#78A17C;
+    font-weight: 500;
+  }
+
+/* Work Container */
+.work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 60px; /* Spacing between boxes */
+}
+
+/* Work Box */
+.work-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Keep the title centered */
+    height: 270px; /* Adjust height for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; /* Keep content centered */
+    overflow: hidden;
+    padding-left: 10px; /* Leave space on the left */
+}
+
+/* Work Title */
+.work-title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px; /* Space between title and image */
+}
+
+/* Image Styling */
+.work-box img {
+    width: 70%; /* Resize image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits nicely */
+
+}
+
+/* Style for the link in the work title */
+.project-link {
+    text-decoration: underline; /* Underline the text */
+    color: black;
+}
+
+
+/* Specific Work Box (CareFinder project) */
+.carefinder-project {
+    display: flex;
+    flex-direction: column; /* Stack title and images vertically */
+    align-items: center; /* Center everything */
+    gap: 10px; /* Space between the title and images */
+    padding-bottom: 40px;
+}
+
+/* Work Title */
+.carefinder-project .work-title {
+    text-align: center; /* Center the title */
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 10px; /* Space between title and images */
+}
+
+/* Image Container (side by side) */
+.carefinder-project .image-container {
+    justify-content: flex-start;
+    width: 100%; /* Ensure container takes full width */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+/* Style for the images */
+.carefinder-project img {
+    width: 22%; /* Resize images to be smaller and fit inside the box */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image fits nicely */
+}
+
+
+/* Border for a specific image */
+.bordered-img {
+    border: 1px solid black;
+}
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Show More Button */
+.show-more-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid white;
+    color: #78A17C;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.show-more-btn:hover {
+    background: #78A17C;
+    color: white;
+    border: none;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.close-modal-btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #78A17C;
+    color: #78A17C;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.close-modal-btn:hover {
+    background-color: #78A17C;
+    color: white;
+}
+
+
+/* For responsiveness: Stacks boxes in a single column on small screens */
+@media (max-width: 768px) {
+    .work-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+}
+
+  
