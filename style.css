@@ -10,7 +10,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
-    scroll-behavior: smooth; /* Enable smooth scrolling */
 }
 
 a {
@@ -18,7 +17,8 @@ a {
     text-decoration: none;
 }
 
-button, .resume-btn {
+button,
+.resume-btn {
     border-radius: 5px;
     color: #78A17C;
 }
@@ -34,7 +34,7 @@ header {
     align-items: center;
     padding-top: 20px;
     padding-left: 50px;
-    padding-right: 50px;  /* Combine common padding */
+    padding-right: 50px;
     background-color: #000;
     z-index: 100;
 }
@@ -60,7 +60,8 @@ nav ul li a {
     transition: background 0.3s;
 }
 
-nav ul li a.active, nav ul li a:hover {
+nav ul li a.active,
+nav ul li a:hover {
     background: white;
     color: black;
 }
@@ -141,19 +142,21 @@ h2 {
 }
 
 .section h3 {
-    text-align: left;            
-    width: 100%;     
-    padding-top: 50px;   
+    text-align: left;
+    width: 100%;
+    padding-top: 50px;
     font-family: Clash Display Variable;
-    color:#78A17C;
+    color: #78A17C;
     font-weight: 500;
-  }
+}
 
 /* Work Container */
 .work-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 60px; /* Spacing between boxes */
+    grid-template-columns: repeat(2, 1fr);
+    /* Two columns */
+    grid-gap: 60px;
+    /* Spacing between boxes */
 }
 
 /* Work Box */
@@ -164,14 +167,18 @@ h2 {
     padding-bottom: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Keep the title centered */
-    height: 270px; /* Adjust height for spacing */
+    text-align: center;
+    /* Keep the title centered */
+    height: 270px;
+    /* Adjust height for spacing */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
-    align-items: center; /* Keep content centered */
+    justify-content: flex-start;
+    align-items: center;
+    /* Keep content centered */
     overflow: hidden;
-    padding-left: 10px; /* Leave space on the left */
+    padding-left: 10px;
+    /* Leave space on the left */
 }
 
 /* Work Title */
@@ -179,20 +186,25 @@ h2 {
     font-size: 1rem;
     font-weight: 400;
     color: black;
-    margin-bottom: 10px; /* Space between title and image */
+    margin-bottom: 10px;
+    /* Space between title and image */
 }
 
 /* Image Styling */
 .work-box img {
-    width: 70%; /* Resize image */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image fits nicely */
+    width: 70%;
+    /* Resize image */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure the image fits nicely */
 
 }
 
 /* Style for the link in the work title */
 .project-link {
-    text-decoration: underline; /* Underline the text */
+    text-decoration: underline;
+    /* Underline the text */
     color: black;
 }
 
@@ -200,33 +212,43 @@ h2 {
 /* Specific Work Box (CareFinder project) */
 .carefinder-project {
     display: flex;
-    flex-direction: column; /* Stack title and images vertically */
-    align-items: center; /* Center everything */
-    gap: 10px; /* Space between the title and images */
+    flex-direction: column;
+    /* Stack title and images vertically */
+    align-items: center;
+    /* Center everything */
+    gap: 10px;
+    /* Space between the title and images */
     padding-bottom: 40px;
 }
 
 /* Work Title */
 .carefinder-project .work-title {
-    text-align: center; /* Center the title */
+    text-align: center;
+    /* Center the title */
     font-size: 1rem;
     font-weight: 400;
     color: black;
-    margin-bottom: 10px; /* Space between title and images */
+    margin-bottom: 10px;
+    /* Space between title and images */
 }
 
 /* Image Container (side by side) */
 .carefinder-project .image-container {
     justify-content: flex-start;
-    width: 100%; /* Ensure container takes full width */
-    flex-wrap: wrap; /* Allow wrapping if needed */
+    width: 100%;
+    /* Ensure container takes full width */
+    flex-wrap: wrap;
+    /* Allow wrapping if needed */
 }
 
 /* Style for the images */
 .carefinder-project img {
-    width: 22%; /* Resize images to be smaller and fit inside the box */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image fits nicely */
+    width: 22%;
+    /* Resize images to be smaller and fit inside the box */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Ensure the image fits nicely */
 }
 
 
@@ -259,14 +281,18 @@ h2 {
 
 /* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black background with transparency */
     justify-content: center;
     align-items: center;
 }
@@ -305,8 +331,270 @@ h2 {
 /* For responsiveness: Stacks boxes in a single column on small screens */
 @media (max-width: 768px) {
     .work-container {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
     }
 }
 
+/* About Section */
+#about {
+    background-color: #f2f2f2;
+    font-family: Satoshi Variable;
+}
+
+.about-title {
+    color: black;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.line {
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.about-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    /* 控制标题和内容的间距 */
+}
+
+.about-title {
+    flex: 0 0 150px;
+    /* 固定宽度，确保对齐 */
+    text-align: left;
+    color: black;
+}
+
+.email {
+    font-size: 0.9em;
+}
+
+.about-content {
+    color: black;
+    font-size: 18px;
+    flex: 1;
+    text-align: left;
+    padding-left: 500px;
+}
+
+.about-content-numbers {
+    color: black;
+    font-size: 18px;
+    flex: 1;
+    text-align: left;
+    padding-left: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 两列布局，左侧是 1,2,3，右侧是 4,5,6 */
+    gap: 10px 20px;
+    /* 控制行间距和列间距 */
+    text-align: left;
+}
+
+.social-links a {
+    margin-right: 10px;
+    color: #6C8C66;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* General form layout adjustments */
+/* Contact Section Layout */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #000;
+  position: relative;
+}
+
+.left-inner {
+  margin-top: auto;
+  padding-bottom: 200px;
+  text-align: left;
+}
+
+.subtitle {
+  font-size: 25px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 100px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.1;
+  color: #fff;
+}
+
+/* Right section styling (Align form content correctly) */
+.right {
+  position: relative;
+  font-family: Satoshi Variable;
+  max-width: 800px;
+  margin: auto;
+  flex: 1;
+  padding: 0 20px 200px; /* Reduced padding to avoid misalignment */
+  display: flex;
+  flex-direction: column; /* Use column layout for form elements */
+  justify-content: center;
+  align-items: flex-start; /* Align form to the start */
+}
+
+/* General form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%; /* Ensure form uses full width */
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+.form-group select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e"); 
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 12px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  /* Firefox兼容 */
+  @-moz-document url-prefix() {
+    .form-group select {
+      padding-right: 24px;
+      background-position: right 8px center;
+    }
+  }
+  
+/* Inputs, selects, and textareas styling */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  font-family: Satoshi Variable;
+  background: transparent;
+  border: 1px solid #808080;
+  color: #808080;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: Satoshi Variable;
+  color: #808080;
+}
+
+.form-group, .checkbox-container {
+  width: 100%; /* Ensure both divs take the full width of the parent container */
+  margin-bottom: 15px; /* Add space between the divs */
+}
+
+textarea {
+  font-family: Satoshi Variable;
+  width: 100%; /* Ensure the textarea stretches to the width of the parent */
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input {
+  margin-right: 10px; /* Space between checkbox and label */
+}
+
+.highlight {
+    color: #78A17C; /* Change this to your desired color */
+    font-size: 15px;
+    text-decoration: underline;
+  }
+
+/* Submit Button */
+.styled-button {
+    border: 1px solid white;
+    font-family: Clash Display Variable;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px; /* Adjust padding for a more compact button */
+    color: #78A17C;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 120px; /* Set a fixed width */
+    text-align: center; /* Ensure the text is centered */
+    cursor: pointer;
+    transition: all 0.3s ease; 
+  }
+
+  .styled-button:hover {
+    background-color: white; /* White background on hover */
+    color: #78A17C; /* Green text on hover */
+    border: 1px solid #78A17C; /* Green border on hover */
+  }
+  
+  /* Styling the new sentence container */
+.no-love {
+    margin-top: 550px; /* Add space above the sentence */
+    font-size: 16px; /* Set the font size */
+    color: #78A17C; /* Set the color of the text */
+    text-align: left; /* Align the text to the left */
+    display: flex;
+    align-items: center; /* Vertically align the text */
+  }
+  
+  /* Position the form and the sentence container */
+  
+  /* Styling the new sentence container */
+  .no-love {
+    position: absolute;
+    right: 0; /* Align the sentence to the right side of the form */
+    font-size: 16px;
+    color: #78A17C;
+    text-align: left; /* Align the text to the left */
+  }
+
+  .email-link {
+    text-decoration: underline; /* Underlines the email */
+    color: #78A17C; /* Optional: Change the email color to match your theme */
+  }
   
