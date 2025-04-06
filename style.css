@@ -11,7 +11,6 @@ body {
     justify-content: flex-start;
     min-height: 100vh;
     transition: background-color 0.3s ease;
-    /* Smooth transition for background color */
 }
 
 /* Blob styles */
@@ -24,7 +23,7 @@ body {
     margin: auto;
     filter: blur(100px);
     transition: opacity 0.3s ease, transform 0.3s ease;
-    /* Smooth transition for opacity and scale */
+
 }
 
 .blob-inner-container {
@@ -63,10 +62,8 @@ body {
     }
 }
 
-/* Class to remove the background gradient */
 .no-gradient {
     background-color: black;
-    /* Reverts the background color to black when scrolling */
 }
 
 
@@ -138,12 +135,9 @@ nav ul {
     /* White border on hover */
 }
 
-/* Optionally, you can add active state styling too */
 #nav-a:active {
     background-color: white;
-    /* For example, change background when clicked */
     color: black;
-    /* Optional, change text color on active */
 }
 
 
