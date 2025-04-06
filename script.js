@@ -2,6 +2,24 @@
 const showMoreButton = document.getElementById('show-more-btn');
 const showMoreModal = document.getElementById('no-more-modal'); // Changed name to avoid conflict
 
+// Select all the anchor links within the navbar
+document.querySelectorAll('.nav-item').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default anchor click behavior
+  
+      // Get the target section by ID
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+  
+      // Scroll to the target section with smooth behavior
+      window.scrollTo({
+        top: targetSection.offsetTop,
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+
 showMoreButton.addEventListener('click', function() {
     showMoreModal.style.display = 'flex';
 });
@@ -46,3 +64,4 @@ function hidePrivacyPolicy() {
     document.getElementById('privacy-policy-content').style.display = 'none';
     document.getElementById('privacy-overlay').style.display = 'none';
 }
+
