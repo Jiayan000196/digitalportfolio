@@ -14,7 +14,7 @@ closeShowMoreModalButton.addEventListener('click', function() {
 // Modal for Project Breakdown buttons (for multiple buttons)
 const projectBreakdownButtons = document.querySelectorAll('.project-breakdown-btn'); // Select all buttons
 const projectBreakdownModals = document.querySelectorAll('.popup-modal'); // Select all modals
-const closeProjectBreakdownModalButtons = document.querySelectorAll('.close-btn'); // Select all close buttons
+const closeProjectBreakdownModalButtons = document.querySelectorAll('.close-btn-work'); // Select all close buttons
 
 projectBreakdownButtons.forEach((button, index) => {
     // Open modal when the button is clicked
@@ -37,24 +37,12 @@ window.onclick = function(event) {
     });
 };
 
-// Privacy policy functions
 function togglePrivacyPolicy() {
-    var privacyContent = document.getElementById('privacy-policy-content');
-    privacyContent.style.display = 'block';
+    document.getElementById('privacy-policy-content').style.display = 'block';
+    document.getElementById('privacy-overlay').style.display = 'block';
 }
 
 function hidePrivacyPolicy() {
-    var privacyContent = document.getElementById('privacy-policy-content');
-    privacyContent.style.display = 'none';
+    document.getElementById('privacy-policy-content').style.display = 'none';
+    document.getElementById('privacy-overlay').style.display = 'none';
 }
-
-// Smooth Scrolling
-document.querySelectorAll('.navbar a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetSection = document.querySelector(this.getAttribute('href'));
-        targetSection.scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});

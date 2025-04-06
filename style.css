@@ -151,6 +151,7 @@ nav ul li a:hover {
 }
 
 .homeh2 {
+    font-family: Clash Display Variable;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 100;
@@ -372,7 +373,7 @@ h2 {
     color: white;
 }
 /* Close Button */
-.close-btn {
+.close-btn-work {
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
@@ -382,8 +383,8 @@ h2 {
     cursor: pointer;
 }
 
-.close-btn:hover,
-.close-btn:focus {
+.close-btn-work:hover,
+.close-btn-work:focus {
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -704,6 +705,38 @@ textarea {
     border: 1px solid #78A17C; /* Green border on hover */
   }
   
+  #privacy-policy-content {
+    color: black;
+    font-family: Satoshi Variable;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    z-index: 9999;
+  }
+
+.close-button-pp {
+    color: #aaa;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-button-pp:hover,
+.close-button-pp:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
   /* Styling the new sentence container */
 .no-love {
     margin-top: 550px; /* Add space above the sentence */
