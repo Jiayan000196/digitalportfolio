@@ -2,6 +2,20 @@
 const showMoreButton = document.getElementById('show-more-btn');
 const showMoreModal = document.getElementById('no-more-modal'); // Changed name to avoid conflict
 
+window.addEventListener('scroll', function() {
+    const blobOuterContainer = document.querySelector('.blob-outer-container');
+
+    // When scrolled down past 50px, fade the blob out
+    if (window.scrollY > 50) {
+        blobOuterContainer.style.opacity = '0';  // Fade out the blob
+        blobOuterContainer.style.transform = 'scale(0.8)';  // Optional: slightly shrink the blob for a smoother effect
+    } else {
+        blobOuterContainer.style.opacity = '1';  // Fade in the blob
+        blobOuterContainer.style.transform = 'scale(1)';  // Restore original size
+    }
+});
+
+
 // Select all the anchor links within the navbar
 document.querySelectorAll('.nav-item').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <header>
+ 
+    <header id="header">
         <div class="logo">
             <h1>Tiffany Wu</h1>
             <div id="designation-container">
@@ -25,10 +26,10 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="#home" class="nav-item">Home</a></li>
-                    <li><a href="#work" class="nav-item">Work</a></li>
-                    <li><a href="#about" class="nav-item">About</a></li>
-                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                    <li><a href="#home" class="nav-item" id="nav-a">Home</a></li>
+                    <li><a href="#work" class="nav-item" id="nav-a">Work</a></li>
+                    <li><a href="#about" class="nav-item" id="nav-a">About</a></li>
+                    <li><a href="#contact" class="nav-item" id="nav-a">Contact</a></li>
                     <li>
                         <a href="https://drive.google.com/file/d/1CSbYReVeta4ddkO5MIXeL_o4n4AKeRdx/view?usp=drive_link" 
                            class="resume-btn" target="_blank">
@@ -39,9 +40,14 @@
             </nav>
         </div>
     </header>
+    <div class="blob-outer-container">
+        <div class="blob-inner-container">
+            <div class="blob"></div>
+        </div>
+    </div>
     
     
-
+    
     <main>
         <!-- Home Section -->
         <section id="home" class="intro">
@@ -54,15 +60,17 @@
                 <div class="homefooter-left">
                     <p>Freelance<br>Front-end web developer</p>
                 </div>
-                <div class="homefooter-center">
-                    <p>Digital designer<br>UX/UI designer</p>
-                </div>
                 <div class="homefooter-right">
                     <p>Get in touch<br><a href="mailto:hellotiffanydesign@gmail.com">hellotiffanydesign@gmail.com</a>
                     </p>
                 </div>
+                <div class="homefooter-center">
+                    <p>Digital designer<br>UX/UI designer</p>
+                </div>
+              
             </div>
         </section>
+     
 
         <!-- Work Section -->
         <section id="work" class="section">

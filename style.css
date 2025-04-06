@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: black; /* Fallback color */
     color: white;
     font-family: Clash Display Variable;
     margin: 0;
@@ -9,12 +9,61 @@ body {
     align-items: center;
     justify-content: flex-start;
     min-height: 100vh;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
 }
 
-a {
-    color: white;
-    text-decoration: none;
+/* Blob styles */
+.blob-outer-container {
+    position: fixed;
+    height: 70%;
+    width: 70%;
+    z-index: 0;
+    inset: 0;
+    margin: auto;
+    filter: blur(100px);
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition for opacity and scale */
 }
+
+.blob-inner-container {
+    border-radius: 99999px;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1000px;
+    overflow: hidden;
+    background-color: #fff;
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.blob {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    background: conic-gradient(from 0deg, #08f, #f60, #bbffa1, #4c00ff, #ab2666, #09f);
+    animation: spinBlob 8s linear infinite;
+    
+}
+
+/* Keyframe animation for spinning blob */
+@keyframes spinBlob {
+    0% {
+        transform: rotate(0deg) scale(2);
+    }
+    100% {
+        transform: rotate(1turn) scale(2);
+    }
+}
+
+/* Class to remove the background gradient */
+.no-gradient {
+    background-color: black; /* Reverts the background color to black when scrolling */
+}
+
 
 button{
     border-radius: 5px;
@@ -34,6 +83,7 @@ button{
     box-shadow: 0 0 20px #78A17C, 0 0 30px #78A17C;
     transform: translateY(-2px);
   }
+  
 
 /* Header */
 header {
@@ -58,6 +108,7 @@ nav {
     gap: 20px;
 }
 
+/* Navbar list */
 nav ul {
     list-style: none;
     display: flex;
@@ -66,23 +117,27 @@ nav ul {
     margin: 0;
 }
 
-nav ul li a {
+/* Navigation link styles */
+#nav-a {
+    color: white;
     padding: 8px 16px;
     border-radius: 5px;
-    transition: background 0.3s;
+    transition: background 0.3s, border 0.3s; /* Add transition for border */
+    text-decoration: none;
 }
 
-nav ul li a.active,
-nav ul li a:hover {
-    background: white;
-    color: black;
+/* Hover effect with white border */
+#nav-a:hover {
+    border: 1px solid white; /* White border on hover */
 }
 
-.resume-btn {
-    border: 1px solid white;
-    padding: 8px 16px;
-    color: #78A17C;
+/* Optionally, you can add active state styling too */
+#nav-a:active {
+    background-color: white;  /* For example, change background when clicked */
+    color: black;  /* Optional, change text color on active */
 }
+
+
 
 .logo h1 {
     margin: 0;
