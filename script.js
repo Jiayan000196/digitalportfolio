@@ -2,7 +2,7 @@
 const showMoreButton = document.getElementById('show-more-btn');
 const showMoreModal = document.getElementById('no-more-modal'); // Changed name to avoid conflict
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const blobOuterContainer = document.querySelector('.blob-outer-container');
 
     // When scrolled down past 50px, fade the blob out
@@ -19,27 +19,27 @@ window.addEventListener('scroll', function() {
 // Select all the anchor links within the navbar
 document.querySelectorAll('.nav-item').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-      e.preventDefault(); // Prevent default anchor click behavior
-  
-      // Get the target section by ID
-      const targetId = this.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
-  
-      // Scroll to the target section with smooth behavior
-      window.scrollTo({
-        top: targetSection.offsetTop,
-        behavior: 'smooth'
-      });
-    });
-  });
-  
+        e.preventDefault(); // Prevent default anchor click behavior
 
-showMoreButton.addEventListener('click', function() {
+        // Get the target section by ID
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+
+        // Scroll to the target section with smooth behavior
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+showMoreButton.addEventListener('click', function () {
     showMoreModal.style.display = 'flex';
 });
 
 const closeShowMoreModalButton = document.querySelector('.close-modal-btn');
-closeShowMoreModalButton.addEventListener('click', function() {
+closeShowMoreModalButton.addEventListener('click', function () {
     showMoreModal.style.display = 'none';
 });
 
@@ -50,17 +50,17 @@ const closeProjectBreakdownModalButtons = document.querySelectorAll('.close-btn-
 
 projectBreakdownButtons.forEach((button, index) => {
     // Open modal when the button is clicked
-    button.onclick = function() {
+    button.onclick = function () {
         projectBreakdownModals[index].style.display = 'flex'; // Display the modal
     };
 
     // Close modal when the close button is clicked
-    closeProjectBreakdownModalButtons[index].onclick = function() {
+    closeProjectBreakdownModalButtons[index].onclick = function () {
         projectBreakdownModals[index].style.display = 'none'; // Hide the modal
     };
 });
 
-window.onclick = function(event) {
+window.onclick = function (event) {
     // Close modals if clicking outside
     projectBreakdownModals.forEach((modal) => {
         if (event.target === modal) {
