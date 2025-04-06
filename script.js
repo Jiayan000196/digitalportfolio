@@ -65,3 +65,4 @@ function hidePrivacyPolicy() {
     document.getElementById('privacy-overlay').style.display = 'none';
 }
 
+

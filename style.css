@@ -1,4 +1,3 @@
-/* Body */
 body {
     background-color: black;
     color: white;
@@ -17,11 +16,24 @@ a {
     text-decoration: none;
 }
 
-button,
-.resume-btn {
+button{
     border-radius: 5px;
     color: #78A17C;
 }
+
+.resume-btn {
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 0 10px #78A17C;
+  }
+  
+  .resume-btn:hover {
+    box-shadow: 0 0 20px #78A17C, 0 0 30px #78A17C;
+    transform: translateY(-2px);
+  }
 
 /* Header */
 header {
@@ -35,8 +47,8 @@ header {
     padding-top: 20px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: #000;
     z-index: 100;
+    background-color: black;
 }
 
 nav {
@@ -133,6 +145,7 @@ nav ul li a:hover {
         transform: translateY(100%);
     }
 }
+
 
 
 .intro {
@@ -538,7 +551,6 @@ h2 {
     text-decoration: underline;
 }
 
-/* General form layout adjustments */
 /* Contact Section Layout */
 .contact-container {
   display: flex;
@@ -551,7 +563,6 @@ h2 {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  background-color: #000;
   position: relative;
 }
 
@@ -764,4 +775,3 @@ textarea {
     color: #78A17C; /* Optional: Change the email color to match your theme */
   }
 
-  
