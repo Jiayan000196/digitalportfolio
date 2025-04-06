@@ -72,12 +72,6 @@ nav ul li a:hover {
     color: #78A17C;
 }
 
-/* Main Content */
-main {
-    padding-top: 120px;
-    width: 100%;
-}
-
 .logo h1 {
     margin: 0;
     font-size: 1.5rem;
@@ -86,14 +80,64 @@ main {
 
 .logo p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 100;
+}
+
+
+#designation-container {
+    position: relative;
+    height: 40px; /* Adjust the height to match your content */
+    overflow: hidden;
+}
+
+.designation {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    animation: rotate 7.5s infinite;
+}
+
+.designation:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.designation:nth-child(2) {
+    animation-delay: 2.5s;
+}
+
+.designation:nth-child(3) {
+    animation-delay: 5s;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    40% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
 }
 
 .intro {
     text-align: left;
     padding-left: 50px;
-    padding-top: 400px;
+    padding-top: 450px;
 }
 
 .profile-pic {
@@ -103,14 +147,18 @@ main {
     object-fit: cover;
     display: block;
     object-position: center 10%;
+    
 }
 
-h2 {
-    font-size: 1.75rem;
+.homeh2 {
+    font-size: 2rem;
     line-height: 1.2;
     font-weight: 100;
     display: block;
     white-space: normal;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    
 }
 
 .highlight {
@@ -127,6 +175,7 @@ h2 {
     width: 90%;
     font-size: 0.9rem;
     margin-top: 40px;
+    padding-bottom: 50px;
 }
 
 .homefooter-right a {
@@ -192,6 +241,7 @@ h2 {
 
 /* Image Styling */
 .work-box img {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     width: 70%;
     /* Resize image */
     height: auto;
@@ -213,11 +263,7 @@ h2 {
 .carefinder-project {
     display: flex;
     flex-direction: column;
-    /* Stack title and images vertically */
     align-items: center;
-    /* Center everything */
-    gap: 10px;
-    /* Space between the title and images */
     padding-bottom: 40px;
 }
 
@@ -255,6 +301,92 @@ h2 {
 /* Border for a specific image */
 .bordered-img {
     border: 1px solid black;
+}
+
+.project-breakdown-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #78A17C;
+    color: #78A17C;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.project-breakdown-btn:hover {
+    background-color: #78A17C;
+    color: white;
+}
+
+
+.project-description {
+    color: grey;
+    font-family: Satoshi Variable;
+    line-height: 1.8; /* Adjust this value for more or less spacing */
+    text-align: left;
+}
+
+.project-description-capstone {
+    color: grey;
+    font-family: Satoshi Variable;
+    line-height: 1.5; /* Adjust this value for more or less spacing */
+    text-align: left;
+}
+
+
+/* Styles for the modal */
+.popup-modal {
+    display: none; /* Ensure modals are hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Background color with opacity */
+    overflow: auto; /* Allows scrolling if the content is larger than the viewport */
+}
+
+.popup-content {
+    background-color: black;
+    margin: 15% auto;
+    padding-left: 30px;
+    border: 1px solid #888;
+    width: 80%; /* Can be adjusted */
+    max-width: 600px;
+    position: relative; /* Needed for positioning the close button */
+}
+
+h2 {
+    font-weight: 300;
+    font-family: Satoshi Variable;
+    padding-top: 50px;
+}
+
+.highlight-text {
+    color:  #78A17C;
+}
+
+.bold-text {
+    color: white;
+}
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* Button Container */
@@ -544,7 +676,7 @@ textarea {
   margin-right: 10px; /* Space between checkbox and label */
 }
 
-.highlight {
+.contacthighlight {
     color: #78A17C; /* Change this to your desired color */
     font-size: 15px;
     text-decoration: underline;
@@ -597,4 +729,5 @@ textarea {
     text-decoration: underline; /* Underlines the email */
     color: #78A17C; /* Optional: Change the email color to match your theme */
   }
+
   
