@@ -1,7 +1,7 @@
 body {
     background-color: black;
     color: white;
-    font-family: Clash Display Variable;
+    font-family: Clash Display Variable, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -151,12 +151,10 @@ nav ul li a:hover {
     }
 }
 
-
-
 .intro {
     text-align: left;
     padding-left: 50px;
-    padding-top: 450px;
+    padding-top: 200px;
 }
 
 .profile-pic {
@@ -170,7 +168,7 @@ nav ul li a:hover {
 }
 
 .homeh2 {
-    font-family: Clash Display Variable;
+    font-family: Clash Display Variable, sans-serif;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 100;
@@ -214,7 +212,7 @@ nav ul li a:hover {
     text-align: left;
     width: 100%;
     padding-top: 50px;
-    font-family: Clash Display Variable;
+    font-family: Clash Display Variable, sans-serif;
     color: #78A17C;
     font-weight: 500;
 }
@@ -342,7 +340,7 @@ nav ul li a:hover {
 
 .project-description {
     color: grey;
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable, sans-serif;
     line-height: 1.8;
     /* Adjust this value for more or less spacing */
     text-align: left;
@@ -350,7 +348,7 @@ nav ul li a:hover {
 
 .project-description-capstone {
     color: grey;
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable, sans-serif;
     line-height: 1.5;
     /* Adjust this value for more or less spacing */
     text-align: left;
@@ -387,7 +385,7 @@ nav ul li a:hover {
 
 h2 {
     font-weight: 300;
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable, sans-serif;
     padding-top: 50px;
 }
 
@@ -499,7 +497,7 @@ h2 {
 /* About Section */
 #about {
     background-color: #D3D3D3;
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable,sans-serif;
 }
 
 .about-title {
@@ -605,7 +603,7 @@ h2 {
 /* Right section styling (Align form content correctly) */
 .right {
     position: relative;
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable,sans-serif;
     max-width: 800px;
     margin: auto;
     flex: 1;
@@ -671,7 +669,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable, sans-serif;
     background: transparent;
     border: 1px solid #808080;
     color: #808080;
@@ -682,7 +680,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable, sans-serif;
     color: #808080;
 }
 
@@ -695,7 +693,7 @@ textarea::placeholder {
 }
 
 textarea {
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable,sans-serif;
     width: 100%;
     /* Ensure the textarea stretches to the width of the parent */
     padding: 10px;
@@ -723,7 +721,7 @@ textarea {
 /* Submit Button */
 .styled-button {
     border: 1px solid white;
-    font-family: Clash Display Variable;
+    font-family: Clash Display Variable, sans-serif;
     font-size: 16px;
     font-weight: 500;
     padding: 8px 16px;
@@ -750,7 +748,7 @@ textarea {
 
 #privacy-policy-content {
     color: black;
-    font-family: Satoshi Variable;
+    font-family: Satoshi Variable,sans-serif;
     display: none;
     position: fixed;
     top: 50%;
@@ -795,11 +793,6 @@ textarea {
     /* Vertically align the text */
 }
 
-/* Position the form and the sentence container */
-
-/* Styling the new sentence container */
-
-
 .email-link {
     color: #78A17C;
     /* Optional: Change the email color to match your theme */
@@ -809,10 +802,13 @@ textarea {
 .contact-form-wrap .email-link {
     text-align: left;
     line-height: 5px;
+    font-family: Satoshi Variable,sans-serif;
+
 }
 
 .contact-form-wrap {
     padding-left: 520px;
+    font-family: Satoshi Variable,sans-serif;
 }
 
 .button-and-contact-wrap {
