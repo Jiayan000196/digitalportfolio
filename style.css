@@ -163,16 +163,16 @@ nav ul li a:hover {
     object-fit: cover;
     display: block;
     object-position: center 10%;
-
 }
 
 .homeh2 {
+    font-family: Clash Display Variable, sans-serif;
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 300;
     display: block;
     white-space: normal;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
@@ -225,6 +225,7 @@ h3 {
     text-align: left;
     width: 100%;
     padding-top: 50px;
+    font-family: Clash Display Variable, sans-serif;
     color: #78A17C;
     font-weight: 500;
 }
@@ -368,6 +369,11 @@ h3 {
     position: relative;
 }
 
+h2 {
+    font-weight: 300;
+    font-family: Satoshi Variable, sans-serif;
+    padding-top: 50px;
+}
 
 .highlight-text {
     color: #78A17C;
@@ -566,6 +572,7 @@ h3 {
 /* Right section styling (Align form content correctly) */
 .right {
     position: relative;
+    font-family: Satoshi Variable,sans-serif;
     max-width: 800px;
     margin: auto;
     flex: 1;
@@ -647,6 +654,7 @@ textarea::placeholder {
 }
 
 textarea {
+    font-family: Satoshi Variable,sans-serif;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -693,6 +701,7 @@ textarea {
 #privacy-policy-content {
     color: black;
     font-family: Satoshi Variable, sans-serif;
+    font-family: Satoshi Variable,sans-serif;
     display: none;
     position: fixed;
     top: 50%;
@@ -739,10 +748,13 @@ textarea {
 .contact-form-wrap .email-link {
     text-align: left;
     line-height: 5px;
+    font-family: Satoshi Variable,sans-serif;
+
 }
 
 .contact-form-wrap {
     padding-left: 520px;
+    font-family: Satoshi Variable,sans-serif;
 }
 
 .button-and-contact-wrap {
