@@ -21,7 +21,7 @@
                 <p class="designation">Web Developer</p>
             </div>
         </div>
-
+    
         <div class="navbar">
             <nav>
                 <ul>
@@ -30,16 +30,35 @@
                     <li><a href="#about" class="nav-item">About</a></li>
                     <li><a href="#contact" class="nav-item">Contact</a></li>
                     <li>
-                        <a href="https://drive.google.com/file/d/1CSbYReVeta4ddkO5MIXeL_o4n4AKeRdx/view?usp=drive_link"
-                            class="resume-btn" target="_blank">
+                        <a href="https://drive.google.com/file/d/1CSbYReVeta4ddkO5MIXeL_o4n4AKeRdx/view?usp=drive_link" class="resume-btn" target="_blank">
                             <i class="fas fa-thumbs-up" style="margin-right: 6px;"></i> Resume
                         </a>
                     </li>
                 </ul>
             </nav>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="menu-overlay" id="menu-overlay">
+                <div class="close-btn" onclick="toggleMenu()">X</div>
+                <ul>
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#work" class="nav-item">Work</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1CSbYReVeta4ddkO5MIXeL_o4n4AKeRdx/view?usp=drive_link" class="resume-btn" target="_blank">
+                            <i class="fas fa-thumbs-up" style="margin-right: 6px;"></i> Resume
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
-
+    
+    
 
     <main>
         <!-- Home Section --><div class="bubble-container" id="container"></div>

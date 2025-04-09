@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', init);
             
             const size = Math.random() * 40 + 20; // 20-60px
             const speed = {
-                x: (Math.random() * 0.3 - 0.15) * 0.5, // 减慢速度
-                y: (Math.random() * 0.4 - 0.2) * 0.5,  // 减慢速度
-                z: (Math.random() * 0.2 - 0.1) * 0.5  // 增加前后移动的减速
+                x: (Math.random() * 0.3 - 0.15) * 0.8, // 减慢速度
+                y: (Math.random() * 0.4 - 0.2) * 0.8,  // 减慢速度
+                z: (Math.random() * 0.2 - 0.1) * 0.8  // 增加前后移动的减速
             };
             
             // 初始位置在容器范围内
@@ -180,4 +180,15 @@ function togglePrivacyPolicy() {
 function hidePrivacyPolicy() {
     document.getElementById('privacy-policy-content').style.display = 'none';
     document.getElementById('privacy-overlay').style.display = 'none';
+}
+
+
+
+function toggleMenu() {
+    const menuOverlay = document.getElementById('menu-overlay');
+    if (menuOverlay.style.display === 'block') {
+        menuOverlay.style.display = 'none';
+    } else {
+        menuOverlay.style.display = 'block';
+    }
 }
